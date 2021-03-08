@@ -26,9 +26,9 @@ public class Brigands extends Humain {
     }
 
     public void presente() {
-        this.parle("Bonjour, je suis " + this.quelEstTonNom() + "et j'aime le " + super.quelEstTaBoisson());
+        this.parle("Bonjour, je suis " + this.quelEstTonNom() + " et j'aime le " + super.quelEstTaBoisson());
         this.parle("J'ai l'air " + this.look + " et j'ai déjà kidnappé " + this.nb_dame + " dames !");
-        this.parle("Ma tête est mise à prix " + this.recompense + "$");
+        this.parle("Ma tête est mise à prix à " + this.recompense + "$");
     }
 
     public void kidnappe(Dame dame) {
@@ -42,6 +42,10 @@ public class Brigands extends Humain {
         sherif.setPopularite(sherif.getPopularite() + this.nb_dame);
         this.nb_dame = 0;
         this.parle("Damned, je suis fait ! " + sherif.quelEstTonNom() + ", tu m'as eu !");
+    }
+
+    public void echappe() {
+        this.en_prison = false;
     }
 
     // Setter

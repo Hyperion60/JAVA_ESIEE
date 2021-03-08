@@ -11,7 +11,7 @@ public class mathematiques {
     Pour n = 5, on doit avoir 2 + 4 + 6 + 8 + 10 = 30
     soit n * 2 + (n - 1) * 2 + (n - 2) * 2 + (n - 3) * 2 + (n - 4) * 2 = 30
      */
-    private static int even_sum(int n) {
+    public static int even_sum(int n) {
         int sum = 0;
         for (int i = n; i != 0; --i) {
             sum += i * 2;
@@ -19,7 +19,7 @@ public class mathematiques {
         return sum;
     }
 
-    private static int[] decompose(int n) {
+    public static int[] decompose(int n) {
         int len = 1; // Longueur du nombre
         if (n > 9) { // Soit longueur > 1
             /* Augmente la longueur jusqu'à que le quotient entier de n / 10^^len soit nul */
@@ -42,7 +42,7 @@ public class mathematiques {
         return output;
     }
 
-    private static long fact_n(int n) {
+    public static long fact_n(int n) {
         long prod = 1; // Les nombres de tailles integers sont trop petit en prend du long
         for (int i = n; i != 0; --i) {
             prod *= i;

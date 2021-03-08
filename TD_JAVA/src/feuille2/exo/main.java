@@ -147,7 +147,7 @@ public class main {
         System.out.println(ind1.getInstance_list());
     }
 
-    public static void main(String[] args) {
+    public static void main() {
         Scanner input = new Scanner(System.in);
         int numero = -1;
         System.out.println("Choisissez quel exercice souhaitez-vous tester (nombre entre 1 et 7) :");

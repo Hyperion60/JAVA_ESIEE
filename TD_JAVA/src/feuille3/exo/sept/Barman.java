@@ -5,7 +5,7 @@ public class Barman extends Humain {
 
     public Barman(String nom) {
         super(nom, "Vin");
-        this.nom_bar = "Chez " + this.quelEstTonNom();
+        this.nom_bar = "Chez " + nom;
     }
 
     public Barman(String nom, String bar) {
@@ -19,7 +19,7 @@ public class Barman extends Humain {
     }
 
     public void parle(String texte) {
-        System.out.println("(" + super.quelEstTonNom() + ") - " + texte + "Coco.");
+        System.out.println("(" + super.quelEstTonNom() + ") - " + texte + " Coco.");
     }
 
     public void presente() {

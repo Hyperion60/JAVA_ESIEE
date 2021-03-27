@@ -1,7 +1,7 @@
 package feuille3.exo.six;
 
 public class Test {
-    public static void main(String[] args) {
+    public static void main() {
         System.out.println("Création des objets de test...");
         Polygone poly1 = new Polygone();
         Triangle triangle = new Triangle(new Point(0, 0), new Point(1, 0), new Point(0, 1));

@@ -4,7 +4,6 @@ import feuille3.exo.cinq.Bibliothèque;
 import feuille3.exo.deux.Etudiant;
 import feuille3.exo.deux.Individu;
 import feuille3.exo.quatre.TestEtudiant;
-import feuille3.exo.un.Test;
 
 import java.util.Scanner;
 
@@ -45,11 +44,21 @@ public class main {
         Bibliothèque.main();
     }
 
-    public static void main(String[] args) {
+    private static void main_six() {
+        System.out.println("Exercice n°7");
+        feuille3.exo.six.Test.main();
+    }
+
+    private static void main_seven() {
+        System.out.println("Exercice n°7");
+        feuille3.exo.sept.Histoire.main();
+    }
+
+    public static void main() {
         Scanner input = new Scanner(System.in);
         int numero = -1;
-        System.out.println("Choisissez quel exercice souhaitez-vous tester (nombre entre 1 et 5) :");
-        while (numero < 1 || numero > 5) {
+        System.out.println("Choisissez quel exercice souhaitez-vous tester (nombre entre 1 et 7) :");
+        while (numero < 1 || numero > 7) {
             numero = input.nextInt();
         }
         switch (numero) {
@@ -58,6 +67,8 @@ public class main {
             case 3 -> main_three();
             case 4 -> main_four();
             case 5 -> main_five();
+            case 6 -> main_six();
+            case 7 -> main_seven();
         }
     }
 }

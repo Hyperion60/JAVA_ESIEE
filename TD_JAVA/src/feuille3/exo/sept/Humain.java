@@ -35,4 +35,13 @@ public class Humain {
     public void boire() {
         this.parle("Ah ! un bon verre de " + this.boisson_preferee + " ! GLOUPS !");
     }
+
+    public void confrontation() {
+        System.out.println("PAN ! PAN !");
+    }
+
+
+    protected String Nom() {
+        return this.nom;
+    }
 }

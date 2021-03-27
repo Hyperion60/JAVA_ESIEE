@@ -2,7 +2,7 @@
 /shelf/
 /workspace.xml
 # Datasource local storage ignored files
-/../../../../../../../../../:\Users\Hyperion\Documents\Ecole\ESIEE\JAVA\TD_JAVA\.idea/dataSources/
+/../../../../../../:\Users\Hyperion\IdeaProjects\TD_JAVA\.idea/dataSources/
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
